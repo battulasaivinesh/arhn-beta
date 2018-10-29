@@ -245,7 +245,6 @@ body {
   font-family: "Avenir";
   text-align: center;
   width: 100%;
-  visibility: hidden;
 }
 .title h1 {
   position: relative;

@@ -31,7 +31,7 @@
     window.onload = loader;
     function loader() {
       loader = new SVGLoader( document.getElementById( 'loader' ), { speedIn : 400 } );
-    let page = document.querySelector('.title');
+    let page = document.querySelector('.home');
       let amount = 10;
       let interval = setInterval(loop, 50);
       function loop() {
@@ -101,7 +101,7 @@
 
 <!-- home -->
 
-
+<div class="home" style="visibility: hidden">
     <div class="contactus" style="text-align:center;font-family: Avenir,sans-serif">
       <button onclick="contact()">
       <i class="fa fa-phone" aria-hidden="true"></i>
@@ -140,6 +140,7 @@
     </div>
 
     <script src="js/count.js"></script>
+    </div>
 
 
 
