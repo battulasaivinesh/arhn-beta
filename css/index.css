@@ -1,7 +1,9 @@
+
+	
 @font-face {
-  font-family: 'Avenir Next';
-  src: url("http://www.yoursite.com/fonts/Avenir_Next.otf"); /* File to be stored at your site */
-  }
+    font-family: 'Avenir';
+    src: url(../fonts/AvenirLTStd-Book.otf);
+}
 
 a.white-mode, a.white-mode:link, a.white-mode:visited, a.white-mode:active {
   font-family: "Montserrat";
@@ -26,9 +28,6 @@ body {
 	font-family: 'Avenir';
 }
 
-.mybox{
-	pading:20%;
-}
 
 .contactus{
 	margin-top: 2vh;
@@ -40,6 +39,7 @@ body {
 	width: 8vw;
 	font-size: 1.2em;
 	transform: translate(38vw);
+	opacity: 0.75;
 }
 
 .sponser{
@@ -52,19 +52,20 @@ body {
 	width: 8vw;
 	font-size: 1.2em;
 	transform: translate(54vw);
+	opacity: 0.75;
 }
 
 .contactus button{
 	font-size: 2em;
 	border-radius: 50%;
-	border:none;
+	border:black;
 	width: 3vw;
 }
 
 .sponser button{
 	font-size: 2em;
 	border-radius: 50%;
-	border:none;
+	border:black;
 }
 
 .back{
@@ -90,12 +91,13 @@ body {
 	width: 8vw;
 	font-size: 1.4em;
 	transform: translateX(46vw);
+	opacity: 0.75;
 }
 
 .arhn button{
 	color:white;
 	background-color: transparent;
-	border:none;
+	border:black;
 	font-size: 2.2em;
 	border-radius: 50%;
 	overflow: hidden;
@@ -290,6 +292,8 @@ body {
   height: auto;
 	width: 70vw;
 	margin-left: 15vw;
+	border: 10px solid transparent;
+	border-radius: 5px;
 }
 
 

@@ -79,16 +79,16 @@
     top: -24% !important;
   }
   .mybox {
-    left:21.5vw;
-  
+    left:19vw;
+    top:65%;
   }
 }
 @media only screen and (max-width: 440px) {
   .mybox {
     text-align: center;
     position: absolute;
-    top: 85%;
-    left:21.5vw;
+    top: 65%;
+    left:19vw;
   }
   .countdown ul.flip {
     width: 22px !important;
