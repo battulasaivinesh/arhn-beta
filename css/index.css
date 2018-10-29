@@ -222,6 +222,48 @@ body {
 	background-color: #CCFF90;
 }
 
+@media screen and (max-width: 600px) {
+	.arhn{
+		margin-top: 2vh;
+		z-index: 55;
+		position: absolute;
+		color:white;
+		font-family: Avenir;
+		height: 9vh;
+		width: 20vw;
+		font-size: 1.4em;
+		transform: translateX(40vw);
+	}
+	.contactus{
+		margin-top: 2vh;
+		z-index: 55;
+		position: absolute;
+		color:white;
+		font-family: Avenir;
+		height: 9vh;
+		width: 9vw;
+		font-size: 1.2em;
+		transform: translate(31vw);
+	}	
+	.contactus button{
+		font-size: 2em;
+		border-radius: 50%;
+		border:none;
+		width: 6vw;
+	}
+	.sponser{
+		margin-top: 2vh;
+		z-index: 55;
+		position: absolute;
+		color:white;
+		font-family: Avenir;
+		height: 9vh;
+		width: 8vw;
+		font-size: 1.2em;
+		transform: translate(60vw);
+	}
+	
+}
 
 /* sponsers */
 .sponsers{
@@ -245,7 +287,7 @@ body {
   left: 50%;
   top: 50%;
   transform: translateX(-50%) translateY(-50%);
-  font-family: 'Avenir Next';
+  font-family: 'Avenir';
   text-align: center;
   width: 100%;
 }
