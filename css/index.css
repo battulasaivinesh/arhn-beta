@@ -26,6 +26,10 @@ body {
 	font-family: 'Avenir';
 }
 
+.mybox{
+	pading:20%;
+}
+
 .contactus{
 	margin-top: 2vh;
 	z-index: 55;
@@ -64,7 +68,8 @@ body {
 }
 
 .back{
-	transform: translateX(98vw);
+	transform: translateX(90vw);
+	width: 10vw;
 }
 
 .back button{
@@ -222,7 +227,15 @@ body {
 	background-color: #CCFF90;
 }
 
+.contact .back{
+	transform:translateX(90vw);
+	width: 10vw;
+}
+
 @media screen and (max-width: 600px) {
+	.countdown.play{
+		height: 6vh;
+	}
 	.arhn{
 		margin-top: 2vh;
 		z-index: 55;
@@ -241,15 +254,15 @@ body {
 		color:white;
 		font-family: Avenir;
 		height: 9vh;
-		width: 9vw;
+		width: 15vw;
 		font-size: 1.2em;
-		transform: translate(31vw);
+		transform: translate(21vw);
 	}	
 	.contactus button{
 		font-size: 2em;
 		border-radius: 50%;
 		border:none;
-		width: 6vw;
+		width: 13vw;
 	}
 	.sponser{
 		margin-top: 2vh;
@@ -258,9 +271,9 @@ body {
 		color:white;
 		font-family: Avenir;
 		height: 9vh;
-		width: 8vw;
+		width: 16vw;
 		font-size: 1.2em;
-		transform: translate(60vw);
+		transform: translate(64vw);
 	}
 	
 }
@@ -269,7 +282,6 @@ body {
 .sponsers{
 	position: absolute;
   display: none;
-	opacity: 0.8;
 	border-radius: 10px;
 }
 
