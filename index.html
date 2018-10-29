@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Aarohan 2019</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js"></script>
+  <link rel="stylesheet" href="css/index.css">
+
+  
+</head>
+
+<body translate="no">
+  <script src="js/classie.js"></script>
+  <script src="js/svgLoader.js"></script>
+  <!-- Loader -->
+      <div id="loader" class="pageload-overlay" data-opening="M 40 -21.875 C 11.356078 -21.875 -11.875 1.3560784 -11.875 30 C -11.875 58.643922 11.356078 81.875 40 81.875 C 68.643922 81.875 91.875 58.643922 91.875 30 C 91.875 1.3560784 68.643922 -21.875 40 -21.875 Z">
+      <svg class="t" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 80 60" preserveAspectRatio="xMidYMid slice">
+        <path d="M40,30 c 0,0 0,0 0,0 0,0 0,0 0,0 0,0 0,0 0,0 0,0 0,0 0,0 Z"></path>
+      </svg>
+    </div><!-- /pageload-overlay -->
+        
+   <!--Loader End  -->
+  
+  <script>
+    window.onload = loader;
+    function loader() {
+      loader = new SVGLoader( document.getElementById( 'loader' ), { speedIn : 400 } );
+    let page = document.querySelector('.title');
+      let amount = 10;
+      let interval = setInterval(loop, 50);
+      function loop() {
+        if (amount >= 100) {
+          clearInterval(interval);
+          loader.hide();
+          page.style.visibility="visible";
+        }else {
+          amount++;
+          loader.show();
+        }
+      }
+    }
+   
+  </script>
+  <a href="./arhn2018.html">
+  <div class="title">
+    
+    <h1>Aarohan 2019</h1>
+    <h3>Coming Soon</h3>
+  </div>
+  </a>
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+  <script  src="js/index.js"></script>
+</body>
+
+</html>

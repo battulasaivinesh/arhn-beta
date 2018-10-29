@@ -1,0 +1,2 @@
+jQuery(document).ready(function($){var e=$("#nav-icon");e.on("click",function(){setTimeout(function(){$("#main-nav-icon").fadeIn(0)},500),$(this).toggleClass("open"),$("#main-nav").toggleClass("active"),$("body").toggleClass("freeze"),$("#interior-header").toggleClass("open")})});
+//# sourceMappingURL=./interior-header-min.js.map

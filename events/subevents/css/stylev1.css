@@ -1,0 +1,1607 @@
+body {
+  margin:0;
+  font-family:Georgia;
+  background-color: white;
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: "proxima";
+  src: url(../fonts/proxima.ttf) format("opentype");
+}
+
+
+@media only screen and (min-width: 0px) and (max-width: 990px){
+    .desktop{
+        display: none;
+    }
+    .bar{
+      width: 10vw;
+      display: inline-block;
+      height: 5%;
+      background-color: black;
+      margin-bottom: 4vh; 
+      margin-left: 30px;
+      position: relative;
+      vertical-align: middle;
+    }
+
+    .arhnlogo{
+     position: fixed;
+    width: 39vw;
+    height: auto;
+    padding-top: 2vh;
+    margin-left: 2vw;
+    z-index: 1;
+    }
+
+    #main-title{
+      position: absolute;
+      right: 3vw;
+      color: black;
+      /*z-index: 99;*/
+      padding-top: 1vh;
+      opacity: 0.5;
+      font-family: proxima;
+      font-size: 5rem;
+    }
+
+    #main-back{
+      position: absolute;
+      left: 3.1vw;
+      top: 86vh;
+      width: 14vw;
+      height: auto;
+      z-index: 0;
+    }
+
+    .zoomingdiv{
+      position: absolute;
+    bottom: 8vh;
+    right: 3vw;
+    height: auto;
+    position: absolute;
+    top: 86vh;
+    right: 3vw;
+    }
+
+    .zooming img {
+     width: 16vw;
+    height: auto;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+    border-radius: 50%;
+    }
+
+    #fb-icon{
+          width: 16vw;
+          height: auto;
+          -webkit-transition: all .5s ease;
+          -moz-transition: all .5s ease;
+          -ms-transition: all .5s ease;
+          transition: all .5s ease;
+          border-radius: 50%;
+      }
+
+    #main-fb{
+        border-radius: 50%
+    }
+
+
+    .zooming img:hover {
+      width: 4.5vw;
+      height: auto;
+    }
+}
+
+
+
+
+
+@media only screen and (min-width: 1000px){
+    .mobile{
+        display: none;
+    }
+    .bar{
+      width: 10vw;
+      display: inline-block;
+      height: 5%;
+      background-color: black;
+      margin-bottom: 7vh; 
+      margin-left: 30px;
+      position: relative;
+      vertical-align: middle;
+    }
+
+     .arhnlogo{
+      position: fixed;
+      width: 20vw;
+      height: auto;
+      padding-top: 2vh;
+      margin-left:2vw;
+      z-index: 1;
+    }
+
+    #main-title{
+        position: absolute;
+    right: 3vw;
+    /* color: black; */
+    /* z-index: 99; */
+    padding-top: 3.7vh;
+    opacity: 0.5;
+    font-weight: 800;
+    font-family: proxima;
+    font-size: 2.1rem;
+   }
+   #main-back{
+      position: absolute;
+      left: 3.1vw;
+      bottom: 5vh;
+      width: 3vw;
+      height: auto;
+      z-index: 5;
+    }
+
+    #main-fb{
+        border-radius: 50%
+    }
+
+    .zoomingdiv{
+      height: auto;
+      position: absolute;
+      top: 89vh;
+      right:3vw;
+      }
+
+    .zooming img {
+      width: 4vw;
+      height: auto;
+      -webkit-transition: all .5s ease;
+         -moz-transition: all .5s ease;
+          -ms-transition: all .5s ease;
+          border-radius: 50%;
+              transition: all .5s ease;
+    }
+    .zooming img:hover {
+      width: 4.5vw;
+      height: auto;
+    }
+}
+
+
+.home {
+  position: fixed;
+  top: 2vh;
+  width: auto;
+  margin-left:2vw;
+  z-index: 5;
+  font-size: 3rem;
+  text-decoration-color: 
+}
+
+#scroll-container{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin-top: -17px;
+
+}
+#container .box {
+  width:1000vw;
+  height:100vh;
+  display:inline-block;
+  position:relative;
+  
+}
+#container .box > div {
+  width:100px;
+  height:100px;
+  font-size:96px;
+  color:#FFF;
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin:-50px 0 0 -50px;
+  line-height:.7;
+  font-weight:bold;
+}
+#container {
+  overflow-y:scroll;
+  overflow-x:hidden;
+  transform: rotate(270deg) translateX(-100%);
+  transform-origin: top left;
+  background-color:white;
+  position:absolute;
+  width:100vh;
+  height:100vw;
+  padding-right: 17px; /* Increase/decrease this value for cross-bfcloser compatibility */
+}
+#container2 {
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+  white-space:nowrap;
+  font-size:0;
+}
+
+
+.one-box {
+  background-color: #FFFFFF;
+}
+
+
+
+
+.row1{
+  position: absolute;
+  height: 15vh;
+  width:auto;
+  z-index: 1;
+  top:20vh;
+  font-family: proxima;
+  /*-ms-transform: skewX(-20deg); */
+  /*-webkit-transform: skewX(-20deg); */
+  /*transform: skewX(-20deg); */
+}
+
+.row2{
+  font-family: proxima;
+  position: absolute;
+  height: 15vh;
+  width:auto;
+  z-index: 1;
+  top:40vh;
+}
+
+.row3{
+  font-family: proxima;
+  position: absolute;
+  height: 15vh;
+  width:auto;
+  z-index: 1;
+  top:60vh;
+}
+
+#row11{
+  left: 0vw;
+}
+
+#row12{
+  left:250vw;
+}
+
+#row13{
+  left:500vw;
+}
+
+
+#row21{
+  left:0px;
+}
+
+#row22{
+  left:250vw;
+}
+
+#row23{
+  left:500vw;
+}
+
+
+#row31{
+  left:0px;
+}
+
+.events-text{
+  font-family: proxima;
+  font-size: 7rem;
+  margin-left: 3vw;
+}
+
+
+
+/*--div pop up animation--*/
+/*---- Aarmageddon----*/
+#bridle {
+    height: 0%;
+    width: 100vw;
+    position: fixed;
+    z-index: 10;
+    bottom: 0;
+    background-color: rgba(255,255,255,1);
+    overflow: hidden;
+    transition: 1.0s;
+}
+
+#event-cover {
+    height: 0%;
+    width: 100vw;
+    position: fixed;
+    z-index: 9;
+    bottom: 0;
+    background-color: rgba(0,0,0,0);
+    overflow: hidden;
+    transition: 1.0s;
+}
+
+.overlay .close {
+    z-index: 12;
+    position: absolute;
+    right: 45px;
+    font-size: 40px;
+}
+.overlay .eventsbtn{
+    z-index:12;
+    position: absolute;
+    left:45px;
+    font-size: 40px;
+}
+
+a:link{
+text-decoration: none;
+}
+
+
+#bs {
+    height: 0%;
+    width: 100vw;
+    position: fixed;
+    z-index: 10;
+    bottom: 0;
+    background-color: rgba(255,255,255,1);
+    overflow: hidden;
+    transition: 1.0s;
+}
+
+#event-cover {
+    height: 0%;
+    width: 100vw;
+    position: fixed;
+    z-index: 9;
+    bottom: 0;
+    background-color: rgba(0,0,0,0);
+    overflow: hidden;
+    transition: 1.0s;
+}
+
+.overlay .close {
+    z-index: 12;
+    position: absolute;
+    right: 45px;
+    font-size: 40px;
+}
+.overlay .eventsbtn{
+    z-index:12;
+    position: absolute;
+    left:45px;
+    font-size: 40px;
+}
+
+a:link{
+text-decoration: none;
+}
+
+
+#pioneer {
+    height: 0%;
+    width: 100vw;
+    position: fixed;
+    z-index: 10;
+    bottom: 0;
+    background-color: rgba(255,255,255,1);
+    overflow: hidden;
+    transition: 1.0s;
+}
+
+#event-cover {
+    height: 0%;
+    width: 100vw;
+    position: fixed;
+    z-index: 9;
+    bottom: 0;
+    background-color: rgba(0,0,0,0);
+    overflow: hidden;
+    transition: 1.0s;
+}
+
+.overlay .close {
+    z-index: 12;
+    position: absolute;
+    right: 45px;
+    font-size: 40px;
+}
+.overlay .eventsbtn{
+    z-index:12;
+    position: absolute;
+    left:45px;
+    font-size: 40px;
+}
+
+a:link{
+text-decoration: none;
+}
+
+
+
+#onspot {
+    height: 0%;
+    width: 100vw;
+    position: fixed;
+    z-index: 10;
+    bottom: 0;
+    background-color: rgba(255,255,255,1);
+    overflow: hidden;
+    transition: 1.0s;
+}
+
+#event-cover {
+    height: 0%;
+    width: 100vw;
+    position: fixed;
+    z-index: 9;
+    bottom: 0;
+    background-color: rgba(0,0,0,0);
+    overflow: hidden;
+    transition: 1.0s;
+}
+
+.overlay .close {
+    z-index: 12;
+    position: absolute;
+    right: 45px;
+    font-size: 40px;
+}
+.overlay .eventsbtn{
+    z-index:12;
+    position: absolute;
+    left:45px;
+    font-size: 40px;
+}
+
+a:link{
+text-decoration: none;
+}
+
+
+#robo{
+    height: 0%;
+    width: 100vw;
+    position: fixed;
+    z-index: 10;
+    bottom: 0;
+    background-color: rgba(255,255,255,1);
+    overflow: hidden;
+    transition: 1.0s;
+}
+
+#event-cover {
+    height: 0%;
+    width: 100vw;
+    position: fixed;
+    z-index: 9;
+    bottom: 0;
+    background-color: rgba(0,0,0,0);
+    overflow: hidden;
+    transition: 1.0s;
+}
+
+.overlay .close {
+    z-index: 12;
+    position: absolute;
+    right: 45px;
+    font-size: 40px;
+}
+.overlay .eventsbtn{
+    z-index:12;
+    position: absolute;
+    left:45px;
+    font-size: 40px;
+}
+
+a:link{
+text-decoration: none;
+}
+
+
+
+/*------- Strategist---------*/
+#jd {
+    height: 0%;
+    width: 100vw;
+    position: fixed;
+    z-index: 10;
+    bottom: 0;
+    background-color: rgba(255,255,255,1);
+    overflow: hidden;
+    transition: 1.0s;
+}
+
+#event-cover {
+    height: 0%;
+    width: 100vw;
+    position: fixed;
+    z-index: 9;
+    bottom: 0;
+    background-color: rgba(0,0,0,0);
+    overflow: hidden;
+    transition: 1.0s;
+}
+
+.overlay .close {
+    z-index: 12;
+    position: absolute;
+    right: 45px;
+    font-size: 40px;
+}
+.overlay .eventsbtn{
+    z-index:12;
+    position: absolute;
+    left:45px;
+    font-size: 40px;
+}
+
+a:link{
+text-decoration: none;
+}
+
+
+
+#bab {
+    height: 0%;
+    width: 100vw;
+    position: fixed;
+    z-index: 10;
+    bottom: 0;
+    background-color: rgba(255,255,255,1);
+    overflow: hidden;
+    transition: 1.0s;
+}
+
+#event-cover {
+    height: 0%;
+    width: 100vw;
+    position: fixed;
+    z-index: 9;
+    bottom: 0;
+    background-color: rgba(0,0,0,0);
+    overflow: hidden;
+    transition: 1.0s;
+}
+
+.overlay .close {
+    z-index: 12;
+    position: absolute;
+    right: 45px;
+    font-size: 40px;
+}
+.overlay .eventsbtn{
+    z-index:12;
+    position: absolute;
+    left:45px;
+    font-size: 40px;
+}
+
+a:link{
+text-decoration: none;
+}
+
+
+#GOR {
+    height: 0%;
+    width: 100vw;
+    position: fixed;
+    z-index: 10;
+    bottom: 0;
+    background-color: rgba(255,255,255,1);
+    overflow: hidden;
+    transition: 1.0s;
+}
+
+#event-cover {
+    height: 0%;
+    width: 100vw;
+    position: fixed;
+    z-index: 9;
+    bottom: 0;
+    background-color: rgba(0,0,0,0);
+    overflow: hidden;
+    transition: 1.0s;
+}
+
+.overlay .close {
+    z-index: 12;
+    position: absolute;
+    right: 45px;
+    font-size: 40px;
+}
+.overlay .eventsbtn{
+    z-index:12;
+    position: absolute;
+    left:45px;
+    font-size: 40px;
+}
+
+a:link{
+text-decoration: none;
+}
+
+#STOCK {
+    height: 0%;
+    width: 100vw;
+    position: fixed;
+    z-index: 10;
+    bottom: 0;
+    background-color: rgba(255,255,255,1);
+    overflow: hidden;
+    transition: 1.0s;
+}
+
+#event-cover {
+    height: 0%;
+    width: 100vw;
+    position: fixed;
+    z-index: 9;
+    bottom: 0;
+    background-color: rgba(0,0,0,0);
+    overflow: hidden;
+    transition: 1.0s;
+}
+
+.overlay .close {
+    z-index: 12;
+    position: absolute;
+    right: 45px;
+    font-size: 40px;
+}
+.overlay .eventsbtn{
+    z-index:12;
+    position: absolute;
+    left:45px;
+    font-size: 40px;
+}
+
+a:link{
+text-decoration: none;
+}
+
+
+
+#TCDC {
+    height: 0%;
+    width: 100vw;
+    position: fixed;
+    z-index: 10;
+    bottom: 0;
+    background-color: rgba(255,255,255,1);
+    overflow: hidden;
+    transition: 1.0s;
+}
+
+#event-cover {
+    height: 0%;
+    width: 100vw;
+    position: fixed;
+    z-index: 9;
+    bottom: 0;
+    background-color: rgba(0,0,0,0);
+    overflow: hidden;
+    transition: 1.0s;
+}
+
+.overlay .close {
+    z-index: 12;
+    position: absolute;
+    right: 45px;
+    font-size: 40px;
+}
+.overlay .eventsbtn{
+    z-index:12;
+    position: absolute;
+    left:45px;
+    font-size: 40px;
+}
+
+a:link{
+text-decoration: none;
+}
+
+
+
+
+/*------- Eureka---------*/
+#bp {
+    height: 0%;
+    width: 100vw;
+    position: fixed;
+    z-index: 10;
+    bottom: 0;
+    background-color: rgba(255,255,255,1);
+    overflow: hidden;
+    transition: 1.0s;
+}
+
+#event-cover {
+    height: 0%;
+    width: 100vw;
+    position: fixed;
+    z-index: 9;
+    bottom: 0;
+    background-color: rgba(0,0,0,0);
+    overflow: hidden;
+    transition: 1.0s;
+}
+
+.overlay .close {
+    z-index: 12;
+    position: absolute;
+    right: 45px;
+    font-size: 40px;
+}
+.overlay .eventsbtn{
+    z-index:12;
+    position: absolute;
+    left:45px;
+    font-size: 40px;
+}
+
+a:link{
+text-decoration: none;
+}
+
+
+#Selldom {
+    height: 0%;
+    width: 100vw;
+    position: fixed;
+    z-index: 10;
+    bottom: 0;
+    background-color: rgba(255,255,255,1);
+    overflow: hidden;
+    transition: 1.0s;
+}
+
+#event-cover {
+    height: 0%;
+    width: 100vw;
+    position: fixed;
+    z-index: 9;
+    bottom: 0;
+    background-color: rgba(0,0,0,0);
+    overflow: hidden;
+    transition: 1.0s;
+}
+
+.overlay .close {
+    z-index: 12;
+    position: absolute;
+    right: 45px;
+    font-size: 40px;
+}
+.overlay .eventsbtn{
+    z-index:12;
+    position: absolute;
+    left:45px;
+    font-size: 40px;
+}
+
+a:link{
+text-decoration: none;
+}
+
+
+
+#Colossus {
+    height: 0%;
+    width: 100vw;
+    position: fixed;
+    z-index: 10;
+    bottom: 0;
+    background-color: rgba(255,255,255,1);
+    overflow: hidden;
+    transition: 1.0s;
+}
+
+#event-cover {
+    height: 0%;
+    width: 100vw;
+    position: fixed;
+    z-index: 9;
+    bottom: 0;
+    background-color: rgba(0,0,0,0);
+    overflow: hidden;
+    transition: 1.0s;
+}
+
+.overlay .close {
+    z-index: 12;
+    position: absolute;
+    right: 45px;
+    font-size: 40px;
+}
+.overlay .eventsbtn{
+    z-index:12;
+    position: absolute;
+    left:45px;
+    font-size: 40px;
+}
+
+a:link{
+text-decoration: none;
+}
+
+
+#bid {
+    height: 0%;
+    width: 100vw;
+    position: fixed;
+    z-index: 10;
+    bottom: 0;
+    background-color: rgba(255,255,255,1);
+    overflow: hidden;
+    transition: 1.0s;
+}
+
+#event-cover {
+    height: 0%;
+    width: 100vw;
+    position: fixed;
+    z-index: 9;
+    bottom: 0;
+    background-color: rgba(0,0,0,0);
+    overflow: hidden;
+    transition: 1.0s;
+}
+
+.overlay .close {
+    z-index: 12;
+    position: absolute;
+    right: 45px;
+    font-size: 40px;
+}
+.overlay .eventsbtn{
+    z-index:12;
+    position: absolute;
+    left:45px;
+    font-size: 40px;
+}
+
+a:link{
+text-decoration: none;
+}
+
+
+
+#btd {
+    height: 0%;
+    width: 100vw;
+    position: fixed;
+    z-index: 10;
+    bottom: 0;
+    background-color: rgba(255,255,255,1);
+    overflow: hidden;
+    transition: 1.0s;
+}
+
+#event-cover {
+    height: 0%;
+    width: 100vw;
+    position: fixed;
+    z-index: 9;
+    bottom: 0;
+    background-color: rgba(0,0,0,0);
+    overflow: hidden;
+    transition: 1.0s;
+}
+
+.overlay .close {
+    z-index: 12;
+    position: absolute;
+    right: 45px;
+    font-size: 40px;
+}
+.overlay .eventsbtn{
+    z-index:12;
+    position: absolute;
+    left:45px;
+    font-size: 40px;
+}
+
+a:link{
+text-decoration: none;
+}
+
+
+
+#ripple {
+    height: 0%;
+    width: 100vw;
+    position: fixed;
+    z-index: 10;
+    bottom: 0;
+    background-color: rgba(255,255,255,1);
+    overflow: hidden;
+    transition: 1.0s;
+}
+
+#event-cover {
+    height: 0%;
+    width: 100vw;
+    position: fixed;
+    z-index: 9;
+    bottom: 0;
+    background-color: rgba(0,0,0,0);
+    overflow: hidden;
+    transition: 1.0s;
+}
+
+.overlay .close {
+    z-index: 12;
+    position: absolute;
+    right: 45px;
+    font-size: 40px;
+}
+.overlay .eventsbtn{
+    z-index:12;
+    position: absolute;
+    left:45px;
+    font-size: 40px;
+}
+
+a:link{
+text-decoration: none;
+}
+
+
+/*------- B of Bytes---------*/
+#km {
+    height: 0%;
+    width: 100vw;
+    position: fixed;
+    z-index: 10;
+    bottom: 0;
+    background-color: rgba(255,255,255,1);
+    overflow: hidden;
+    transition: 1.0s;
+}
+
+#event-cover {
+    height: 0%;
+    width: 100vw;
+    position: fixed;
+    z-index: 9;
+    bottom: 0;
+    background-color: rgba(0,0,0,0);
+    overflow: hidden;
+    transition: 1.0s;
+}
+
+.overlay .close {
+    z-index: 12;
+    position: absolute;
+    right: 45px;
+    font-size: 40px;
+}
+.overlay .eventsbtn{
+    z-index:12;
+    position: absolute;
+    left:45px;
+    font-size: 40px;
+}
+
+a:link{
+text-decoration: none;
+}
+
+
+#inq {
+    height: 0%;
+    width: 100vw;
+    position: fixed;
+    z-index: 10;
+    bottom: 0;
+    background-color: rgba(255,255,255,1);
+    overflow: hidden;
+    transition: 1.0s;
+}
+
+#event-cover {
+    height: 0%;
+    width: 100vw;
+    position: fixed;
+    z-index: 9;
+    bottom: 0;
+    background-color: rgba(0,0,0,0);
+    overflow: hidden;
+    transition: 1.0s;
+}
+
+.overlay .close {
+    z-index: 12;
+    position: absolute;
+    right: 45px;
+    font-size: 40px;
+}
+.overlay .eventsbtn{
+    z-index:12;
+    position: absolute;
+    left:45px;
+    font-size: 40px;
+}
+
+a:link{
+text-decoration: none;
+}
+
+
+#dc {
+    height: 0%;
+    width: 100vw;
+    position: fixed;
+    z-index: 10;
+    bottom: 0;
+    background-color: rgba(255,255,255,1);
+    overflow: hidden;
+    transition: 1.0s;
+}
+
+#event-cover {
+    height: 0%;
+    width: 100vw;
+    position: fixed;
+    z-index: 9;
+    bottom: 0;
+    background-color: rgba(0,0,0,0);
+    overflow: hidden;
+    transition: 1.0s;
+}
+
+.overlay .close {
+    z-index: 12;
+    position: absolute;
+    right: 45px;
+    font-size: 40px;
+}
+.overlay .eventsbtn{
+    z-index:12;
+    position: absolute;
+    left:45px;
+    font-size: 40px;
+}
+
+a:link{
+text-decoration: none;
+}
+
+/*---------------Extravaganza-------*/
+#exq {
+    height: 0%;
+    width: 100vw;
+    position: fixed;
+    z-index: 10;
+    bottom: 0;
+    background-color: rgba(255,255,255,1);
+    overflow: hidden;
+    transition: 1.0s;
+}
+
+#event-cover {
+    height: 0%;
+    width: 100vw;
+    position: fixed;
+    z-index: 9;
+    bottom: 0;
+    background-color: rgba(0,0,0,0);
+    overflow: hidden;
+    transition: 1.0s;
+}
+
+.overlay .close {
+    z-index: 12;
+    position: absolute;
+    right: 45px;
+    font-size: 40px;
+}
+.overlay .eventsbtn{
+    z-index:12;
+    position: absolute;
+    left:45px;
+    font-size: 40px;
+}
+
+
+#pcg {
+    height: 0%;
+    width: 100vw;
+    position: fixed;
+    z-index: 10;
+    bottom: 0;
+    background-color: rgba(255,255,255,1);
+    overflow: hidden;
+    transition: 1.0s;
+}
+
+#event-cover {
+    height: 0%;
+    width: 100vw;
+    position: fixed;
+    z-index: 9;
+    bottom: 0;
+    background-color: rgba(0,0,0,0);
+    overflow: hidden;
+    transition: 1.0s;
+}
+
+.overlay .close {
+    z-index: 12;
+    position: absolute;
+    right: 45px;
+    font-size: 40px;
+}
+.overlay .eventsbtn{
+    z-index:12;
+    position: absolute;
+    left:45px;
+    font-size: 40px;
+}
+
+a:link{
+text-decoration: none;
+}
+
+
+
+/*------- Techelon---------*/
+#inv {
+    height: 0%;
+    width: 100vw;
+    position: fixed;
+    z-index: 10;
+    bottom: 0;
+    background-color: rgba(255,255,255,1);
+    overflow: hidden;
+    transition: 1.0s;
+}
+
+#event-cover {
+    height: 0%;
+    width: 100vw;
+    position: fixed;
+    z-index: 9;
+    bottom: 0;
+    background-color: rgba(0,0,0,0);
+    overflow: hidden;
+    transition: 1.0s;
+}
+
+.overlay .close {
+    z-index: 12;
+    position: absolute;
+    right: 45px;
+    font-size: 40px;
+}
+.overlay .eventsbtn{
+    z-index:12;
+    position: absolute;
+    left:45px;
+    font-size: 40px;
+}
+
+a:link{
+text-decoration: none;
+}
+
+
+#asm {
+    height: 0%;
+    width: 100vw;
+    position: fixed;
+    z-index: 10;
+    bottom: 0;
+    background-color: rgba(255,255,255,1);
+    overflow: hidden;
+    transition: 1.0s;
+}
+
+#event-cover {
+    height: 0%;
+    width: 100vw;
+    position: fixed;
+    z-index: 9;
+    bottom: 0;
+    background-color: rgba(0,0,0,0);
+    overflow: hidden;
+    transition: 1.0s;
+}
+
+.overlay .close {
+    z-index: 12;
+    position: absolute;
+    right: 45px;
+    font-size: 40px;
+}
+.overlay .eventsbtn{
+    z-index:12;
+    position: absolute;
+    left:45px;
+    font-size: 40px;
+}
+
+a:link{
+text-decoration: none;
+}
+
+
+#con {
+    height: 0%;
+    width: 100vw;
+    position: fixed;
+    z-index: 10;
+    bottom: 0;
+    background-color: rgba(255,255,255,1);
+    overflow: hidden;
+    transition: 1.0s;
+}
+
+#event-cover {
+    height: 0%;
+    width: 100vw;
+    position: fixed;
+    z-index: 9;
+    bottom: 0;
+    background-color: rgba(0,0,0,0);
+    overflow: hidden;
+    transition: 1.0s;
+}
+
+.overlay .close {
+    z-index: 12;
+    position: absolute;
+    right: 45px;
+    font-size: 40px;
+}
+.overlay .eventsbtn{
+    z-index:12;
+    position: absolute;
+    left:45px;
+    font-size: 40px;
+}
+
+a:link{
+text-decoration: none;
+}
+
+
+#rok {
+    height: 0%;
+    width: 100vw;
+    position: fixed;
+    z-index: 10;
+    bottom: 0;
+    background-color: rgba(255,255,255,1);
+    overflow: hidden;
+    transition: 1.0s;
+}
+
+#event-cover {
+    height: 0%;
+    width: 100vw;
+    position: fixed;
+    z-index: 9;
+    bottom: 0;
+    background-color: rgba(0,0,0,0);
+    overflow: hidden;
+    transition: 1.0s;
+}
+
+.overlay .close {
+    z-index: 12;
+    position: absolute;
+    right: 45px;
+    font-size: 40px;
+}
+.overlay .eventsbtn{
+    z-index:12;
+    position: absolute;
+    left:45px;
+    font-size: 40px;
+}
+
+a:link{
+text-decoration: none;
+}
+
+
+#tm {
+    height: 0%;
+    width: 100vw;
+    position: fixed;
+    z-index: 10;
+    bottom: 0;
+    background-color: rgba(255,255,255,1);
+    overflow: hidden;
+    transition: 1.0s;
+}
+
+#event-cover {
+    height: 0%;
+    width: 100vw;
+    position: fixed;
+    z-index: 9;
+    bottom: 0;
+    background-color: rgba(0,0,0,0);
+    overflow: hidden;
+    transition: 1.0s;
+}
+
+.overlay .close {
+    z-index: 12;
+    position: absolute;
+    right: 45px;
+    font-size: 40px;
+}
+.overlay .eventsbtn{
+    z-index:12;
+    position: absolute;
+    left:45px;
+    font-size: 40px;
+}
+
+a:link{
+text-decoration: none;
+}
+
+/*------- Apostrophe---*/
+
+#Abhivyakti {
+    height: 0%;
+    width: 100vw;
+    position: fixed;
+    z-index: 10;
+    bottom: 0;
+    background-color: rgba(255,255,255,1);
+    overflow: hidden;
+    transition: 1.0s;
+}
+
+#event-cover {
+    height: 0%;
+    width: 100vw;
+    position: fixed;
+    z-index: 9;
+    bottom: 0;
+    background-color: rgba(0,0,0,0);
+    overflow: hidden;
+    transition: 1.0s;
+}
+
+.overlay .close {
+    z-index: 12;
+    position: absolute;
+    right: 45px;
+    font-size: 40px;
+}
+.overlay .eventsbtn{
+    z-index:12;
+    position: absolute;
+    left:45px;
+    font-size: 40px;
+}
+
+a:link{
+text-decoration: none;
+}
+
+
+#conj {
+    height: 0%;
+    width: 100vw;
+    position: fixed;
+    z-index: 10;
+    bottom: 0;
+    background-color: rgba(255,255,255,1);
+    overflow: hidden;
+    transition: 1.0s;
+}
+
+#event-cover {
+    height: 0%;
+    width: 100vw;
+    position: fixed;
+    z-index: 9;
+    bottom: 0;
+    background-color: rgba(0,0,0,0);
+    overflow: hidden;
+    transition: 1.0s;
+}
+
+.overlay .close {
+    z-index: 12;
+    position: absolute;
+    right: 45px;
+    font-size: 40px;
+}
+.overlay .eventsbtn{
+    z-index:12;
+    position: absolute;
+    left:45px;
+    font-size: 40px;
+}
+
+a:link{
+text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+/*----- close,cell button hover action----*/
+ *:after, *:before {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+
+.overlay > a {
+  text-decoration: none;
+  color: rgba(0,0,0,.4);
+  z-index: 1;
+}
+
+.overlay > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background: #9CF5A6;
+  visibility: hidden;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transition: .25s linear;
+}
+.overlay > a:hover:before,
+.overlay > a:focus:before {
+  visibility: visible;
+  transform: scaleX(1.0);
+}
+
+@keyframes hover-v {
+  0% {
+      transform: scaleX(0);
+      height: 5px;
+     }
+  45% {   
+      transform: scaleX(1.05);
+      height: 5px;
+     }
+  55% {height: 5px;}
+  100% {
+      transform: scaleX(1.05);
+      height: 3.8rem;
+     }
+}
+@keyframes no-hover-v {
+  0% {
+      transform: scaleX(1.05);
+      height: 3.8rem;
+     }
+  45% {height: 5px;}
+  55% {   
+      transform: scaleX(1.05);
+      height: 5px;
+      opacity: 1;
+     }
+  
+  100% {
+      transform: scaleX(0);
+      height: 5px;
+      opacity: .02;
+     }
+}
+
+
+
+
+
+
+*:after, *:before {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+
+.Eventname > a {
+  text-decoration: none;
+  color: rgba(0,0,0,.5);
+  z-index: 1;
+}
+
+.Eventname > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background: #9CF5A6;
+  visibility: hidden;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transition: .25s linear;
+}
+.Eventname > a:hover:before,
+.Eventname > a:focus:before {
+  visibility: visible;
+  transform: scaleX(1.0);
+}
+
+@keyframes hover-v {
+  0% {
+      transform: scaleX(0);
+      height: 5px;
+     }
+  45% {   
+      transform: scaleX(1.05);
+      height: 5px;
+     }
+  55% {height: 5px;}
+  100% {
+      transform: scaleX(1.05);
+      height: 3.8rem;
+     }
+}
+@keyframes no-hover-v {
+  0% {
+      transform: scaleX(1.05);
+      height: 3.8rem;
+     }
+  45% {height: 5px;}
+  55% {   
+      transform: scaleX(1.05);
+      height: 5px;
+      opacity: 1;
+     }
+  
+  100% {
+      transform: scaleX(0);
+      height: 5px;
+      opacity: .02;
+     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Translating the content's X ruines the scrollbar length. */
+/*
+#container {
+  overflow:scroll;
+  transform: rotate(90deg) translateY(-100%);
+  transform-origin: top left;
+  background-color:#999;
+  position:absolute;
+  width:100vh;
+  height:100vw;
+}
+#container2 {
+  transform: rotate(-90deg) translateX(-100vw);
+  transform-origin: top left;
+  white-space:nowrap;
+}
+*/
