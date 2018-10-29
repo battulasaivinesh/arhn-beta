@@ -8,6 +8,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js"></script>
   <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/count.css">
 
   
 </head>
@@ -42,8 +45,87 @@
         }
       }
     }
+
+            function contact() {
+          loader = new SVGLoader( document.getElementById( 'loader' ), { speedIn : 300 } );
+          let home = document.querySelector('.title');
+          let contact = document.querySelector('.contact');
+          let sponser = document.querySelector('.sponsers');
+          let timer = document.querySelector('.mybox');
+          home.style.display="none";
+          contact.style.display="block";
+          timer.style.display="none";
+          sponser.style.display="none";
+          loader.show();
+							// after some time hide loader
+							setTimeout( function() {
+								loader.hide();
+							}, 2000 );
+        };
+
+        function sponser() {
+          loader = new SVGLoader( document.getElementById( 'loader' ), { speedIn : 300 } );
+          let home = document.querySelector('.title');
+          let contact = document.querySelector('.contact');
+          let sponser = document.querySelector('.sponsers');
+          let timer = document.querySelector('.mybox');
+          home.style.display="none";
+          sponser.style.display="block";
+          timer.style.display="none";
+          contact.style.display="none";
+          loader.show();
+							// after some time hide loader
+							setTimeout( function() {
+								loader.hide();
+							}, 2000 );
+        };
+
+        function back() {
+          loader = new SVGLoader( document.getElementById( 'loader' ), { speedIn : 300 } );
+          let home = document.querySelector('.title');
+          let contact = document.querySelector('.contact');
+          let sponser = document.querySelector('.sponsers');
+          let timer = document.querySelector('.mybox');
+          home.style.display="block";
+          contact.style.display="none";
+          sponser.style.display="none";
+          timer.style.display="block";
+          loader.show();
+							// after some time hide loader
+							setTimeout( function() {
+								loader.hide();
+							}, 2000 );
+        };
    
   </script>
+
+<!-- home -->
+
+
+    <div class="contactus" style="text-align:center;font-family: Avenir,sans-serif">
+      <button onclick="contact()">
+      <i class="fa fa-phone" aria-hidden="true"></i>
+      </button>
+      <br>
+      Contact Us
+    </div>
+
+    <div class="arhn" style="text-align:center;">
+      <button onclick="back()">
+          <img src="img/arhnlogosmall.png">
+      </button>
+    </div>
+
+    <div class="sponser" style="text-align:center;font-family: Avenir,sans-serif">
+      <button onclick="sponser()">
+          <i class="fa fa-handshake-o" aria-hidden="true" ></i>
+      </button>
+      <br>
+      Sponsers
+    </div>
+
+
+
   <a href="./arhn2018.html">
   <div class="title">
     
@@ -51,8 +133,86 @@
     <h3>Coming Soon</h3>
   </div>
   </a>
+
+  <!-- countdonw -->
+  <div class="mybox">
+      <div class="countdown" style="height:100px;"></div>
+    </div>
+
+    <script src="js/count.js"></script>
+
+
+
+ <!-- contact us -->
+ <div id="pagewrap" class="contact">  
+    <div class="back" style="transform:translateX(48vw)">
+        <button onclick="back()">
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </button>
+      </div> 
+            <div style="text-align:center;color: white;margin-top: 20vh;">
+                <h1>Contact Us</h1>
+            </div>  
+  <div class="container-fluid" style="margin-top: 5vh;margin-left: 8vw;text-align: center;">
+      <div class="row">
+          <div class="col-md-6 col-lg-4">
+          <div class="card">
+              <div class="card_Banner one">
+                  <div class="card_Avatar"></div>
+                  </div>
+                  <h3>SHIVAM KUMAR JHA</h3>
+                  <h4>Convener & Head</h4>
+                  <a> +91-89449-21428</a>
+                  <ul>
+              </ul>
+              </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+          <div class="card">
+              <div class="card_Banner two">
+                  <div class="card_Avatar"></div>
+                  </div>
+                  <h3>MAYANK MEHTA</h3>
+                  <h4>General Secretary</h4>
+                  <a> +91-90835-04362</a>
+                  <ul>
+              </ul>
+              </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+          <div class="card">
+              <div class="card_Banner three">
+                  <div class="card_Avatar"></div>
+                  </div>
+                  <h3>AKHIL KOMMINENI</h3>
+                  <h4>Treasurer</h4>
+                  <a> +91-94930-56384</a>
+                  <ul>
+              </ul>
+              </div>
+          </div>
+      </div>
+    </div>
+
+</div>
+
+<!-- sponsers -->
+<div class="sponsers">
+    <div class="back">
+        <button onclick="back()">
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </button>
+      </div>
+  <img src="img/sponsor2v1.png"> 
+</div>
+
+
   <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
   <script  src="js/index.js"></script>
 </body>
+
+
+
+
 
 </html>
