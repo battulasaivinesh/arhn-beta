@@ -145,10 +145,10 @@ body {
 }
 
 .mycard{
-	margin: 2vw;
+	display: inline-block;
+	margin: 10px;
   height: auto;
   background-color: #f1f1f1;
-  margin-bottom: 15vh;
 	overflow: hidden;
 	background-color: #FFFFFF;
 	border-radius: 10px;
@@ -261,16 +261,11 @@ body {
 	width: 10vw;
 }
 
-
 @media screen and (max-width: 600px) {
 	.contactbox {
 		overflow-x: scroll;
 		overflow-y: hidden;
 		white-space: nowrap;
-	}
-
-	.mycard {
-		display: inline-block;
 	}
 
 	.countdown.play{
