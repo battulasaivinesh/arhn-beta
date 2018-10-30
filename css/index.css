@@ -298,7 +298,7 @@ body {
 		font-size: 2em;
 		border-radius: 50%;
 		border:none;
-		width: 13vw;
+		width: 15vw;
 	}
 	.sponser{
 		margin-top: 2vh;
@@ -309,7 +309,7 @@ body {
 		height: 9vh;
 		width: 16vw;
 		font-size: 1.2em;
-		transform: translate(64vw);
+		transform: translate(69vw);
 	}
 	.sponsers img{
 		width: 100vw;
