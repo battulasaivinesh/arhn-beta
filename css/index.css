@@ -28,6 +28,11 @@ body {
 	font-family: 'Avenir';
 }
 
+.canvas{
+	width: 100vw;
+	height: 100vh;
+}
+
 
 .contactus{
 	margin-top: 2vh;
