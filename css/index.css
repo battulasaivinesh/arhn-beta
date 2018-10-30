@@ -32,29 +32,54 @@ position: fixed;
 
 
 .contactus{
-margin-top: 2vh;
-z-index: 55;
-position: absolute;
-color:white;
-font-family: Avenir;
-height: 9vh;
-width: 8vw;
-font-size: 1.2em;
-transform: translate(38vw);
-opacity: 0.75;
+    /* margin-top: 2vh; */
+    z-index: 55;
+    /* position: absolute; */
+    color: black;
+    font-family: Avenir;
+    height: 9vh;
+    display: inline;
+    margin-right: 50px;
+    cursor: pointer;
+    /* width: 8vw; */
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    transform: translate(38vw);
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px
+    /* opacity: 0.75; */
+}
+
+.contactus:hover{
+   /*border-bottom: 8px solid black;*/
+   background-color: #eeeeee;
 }
 
 .sponser{
-margin-top: 2vh;
-z-index: 55;
-position: absolute;
-color:white;
-font-family: Avenir;
-height: 9vh;
-width: 8vw;
-font-size: 1.2em;
-transform: translate(54vw);
-opacity: 0.75;
+    margin-top: 2vh;
+    z-index: 55;
+    /* position: absolute; */
+    color: black;
+    font-family: Avenir;
+    height: 9vh;
+    width: 8vw;
+    cursor: pointer;
+    margin-left: 50px;
+    display: inline;
+    font-size: 1.2em;
+    transform: translate(54vw);
+    opacity: 1;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px
+}
+
+.sponser:hover{
+   /*border-bottom: 8px solid black;*/
+   background-color: #eeeeee;
 }
 
 .sponsers{
@@ -63,13 +88,14 @@ margin-top: 2vh;
 
 
 
+
+
 .contactus button{
 font-size: 2em;
 border-radius: 50%;
 border:black;
 width: 3vw;
-}
-
+}f
 .sponser button{
 font-size: 2em;
 border-radius: 50%;
@@ -77,7 +103,7 @@ border:black;
 }
 
 .back{
-transform: translateX(97vw);
+transform: translateX(94vw);
 width: 3vw;
 }
 
@@ -90,16 +116,27 @@ font-size: 1.5em;
 
 
 .arhn{
-margin-top: 2vh;
-z-index: 55;
-position: absolute;
-color:white;
-font-family: Avenir;
-height: 9vh;
-width: 8vw;
-font-size: 1.4em;
-transform: translateX(46vw);
-opacity: 0.75;
+    margin-top: 2vh;
+    z-index: 55;
+    /* position: absolute; */
+    color: black;
+    font-family: Avenir;
+    height: 9vh;
+    width: 8vw;
+    display: inline;
+    font-size: 1.2em;
+    cursor: pointer;
+    transform: translateX(46vw);
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    opacity: 1;
+}
+
+.arhn:hover{
+   /*border-bottom: 8px solid black;*/
+   background-color: #eeeeee;
 }
 
 .arhn button{
@@ -122,11 +159,13 @@ display: none;
 border-radius: 10px;
 }
 
+
+
 .sponsers img{
 padding-top:10vh;
 height: auto;
-width: 70vw;
-margin-left: 15vw;
+width: 88vw;
+margin-left: 6vw;
 border: 10px solid transparent;
 border-radius: 5px;
 }
@@ -300,6 +339,7 @@ width: 10vw;
 	height: 9vh;
 	width: 15vw;
 	font-size: 1.2em;
+	cursor: pointer;
 	transform: translate(21vw);
 }	
 .contactus button{
@@ -312,6 +352,8 @@ width: 10vw;
 .sponser button{
 	font-size: 1.8em;
 }
+
+
 
 .sponser{
 	margin-top: 2vh;
