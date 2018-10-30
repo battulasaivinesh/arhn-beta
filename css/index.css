@@ -279,6 +279,10 @@ body {
 	.home{
 		overflow: hidden;
 	}
+	.back{
+		transform: translateX(90vw);
+		width: 10vw;
+	}
 	.contactus{
 		margin-top: 2vh;
 		z-index: 55;
