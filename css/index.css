@@ -263,12 +263,14 @@ body {
 
 
 @media screen and (max-width: 600px) {
-	.contactbox{
-		overflow-y: scroll;
+	.contactbox {
+		overflow-x: scroll;
+		overflow-y: hidden;
+		white-space: nowrap;
 	}
 
-	.mycard{
-		display: table-cell;
+	.mycard {
+		display: inline-block;
 	}
 
 	.countdown.play{
