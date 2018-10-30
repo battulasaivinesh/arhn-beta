@@ -21,7 +21,7 @@ a.white-mode:hover, a.white-mode:link:hover, a.white-mode:visited:hover, a.white
 body {
   margin: 0;
   padding: 0;
-	overflow: hidden;
+	overflow-y: hidden;
   width: 100%;
   height: 100%;
 	background: #000000;
@@ -319,7 +319,7 @@ body {
 		height: 9vh;
 		width: 16vw;
 		font-size: 1.2em;
-		transform: translate(68vw);
+		transform: translate(67vw);
 	}
 	.sponsers img{
 		width: 100vw;
