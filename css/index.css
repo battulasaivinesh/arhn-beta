@@ -21,7 +21,7 @@ a.white-mode:hover, a.white-mode:link:hover, a.white-mode:visited:hover, a.white
 body {
   margin: 0;
   padding: 0;
-  overflow: hidden;
+	overflow: hidden;
   width: 100vw;
   height: 100vh;
 	background: #000000;
@@ -55,6 +55,12 @@ body {
 	opacity: 0.75;
 }
 
+.sponsers{
+	margin-top: 2vh;
+}
+
+
+
 .contactus button{
 	font-size: 2em;
 	border-radius: 50%;
@@ -69,8 +75,8 @@ body {
 }
 
 .back{
-	transform: translateX(90vw);
-	width: 10vw;
+	transform: translateX(97vw);
+	width: 3vw;
 }
 
 .back button{
@@ -106,6 +112,21 @@ body {
 .arhn img{
 	height: 10vh;
 	width:10vh;
+}
+
+.sponsers{
+	position: absolute;
+  display: none;
+	border-radius: 10px;
+}
+
+.sponsers img{
+	padding-top:10vh;
+  height: auto;
+	width: 70vw;
+	margin-left: 15vw;
+	border: 10px solid transparent;
+	border-radius: 5px;
 }
 
 .contact{
@@ -234,6 +255,7 @@ body {
 	width: 10vw;
 }
 
+
 @media screen and (max-width: 600px) {
 	.countdown.play{
 		height: 6vh;
@@ -248,6 +270,9 @@ body {
 		width: 20vw;
 		font-size: 1.4em;
 		transform: translateX(40vw);
+	}
+	.home{
+		overflow: hidden;
 	}
 	.contactus{
 		margin-top: 2vh;
@@ -277,23 +302,12 @@ body {
 		font-size: 1.2em;
 		transform: translate(64vw);
 	}
+	.sponsers img{
+		width: 100vw;
+		 margin-left: 0; 
+	}
 	
-}
-
-/* sponsers */
-.sponsers{
-	position: absolute;
-  display: none;
-	border-radius: 10px;
-}
-
-.sponsers img{
-	padding-top:10vh;
-  height: auto;
-	width: 70vw;
-	margin-left: 15vw;
-	border: 10px solid transparent;
-	border-radius: 5px;
+	
 }
 
 
