@@ -144,7 +144,8 @@ body {
   background-color: rgba(201, 76, 76, 0);
 }
 
-.card{
+.mycard{
+	margin: 2vw;
   height: auto;
   background-color: #f1f1f1;
   margin-bottom: 15vh;
@@ -153,12 +154,12 @@ body {
 	border-radius: 10px;
 	box-shadow: 0 5px 10px rgba(0,0,0,0.1);
 	text-align: center;
-	max-width: 300px;
+	width: 250px;
 	-webkit-transition: .1s ease-in-out;
 	transition: .1s ease-in-out;
 }
 
-	.card:hover{
+	.mycard:hover{
 		margin-top: -25px;
 		box-shadow: 0 15px 20px rgba(0,0,0,0.1);
 	}
@@ -172,7 +173,7 @@ body {
 	background-position: center;
 }
 
-	.card:nth-child(1) .card_Banner{
+	.mycard:nth-child(1) .card_Banner{
 		/* ⬇ Photo by Alexandru Acea on Unsplash */
 		background-image: url("https://.unsplash.com/photo-1537192830907-c60714675834?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f9f8ea79c488a95e95d35c10fad79b0d&auto=format&fit=crop&w=934&q=80");
 	}
@@ -189,31 +190,31 @@ body {
 	box-shadow: 0 2px 2px rgba(0,0,0,0.1);
 }
 
-	.card .one .card_Avatar{
+	.mycard .one .card_Avatar{
     background-image: url("https://www.ccanitd.in/images/Shivam.jpg");
   }
-  .card .two .card_Avatar{
+  .mycard .two .card_Avatar{
     background-image: url("https://www.ccanitd.in/images/Mayank.jpg");
   }
-  .card .three .card_Avatar{
+  .mycard .three .card_Avatar{
     background-image: url("https://www.ccanitd.in/images/Akhil.jpg");
   }
 
-.card h3, a, i{
-	font-family: 'Roboto', sans-serif;
+.mycard h3, a, i{
+	font-family: 'Avenir', sans-serif;
 	font-weight: lighter;
 	-webkit-transition: .1s ease-in-out;
 	transition: .1s ease-in-out;
 }
 
-	.card h3{
+	.mycard h3{
 		margin-top: 45px;
 		margin-bottom: 5px;
 		font-size: 18px;
 		color: #212121;
 	}
 
-	.card a{
+	.mycard a{
 		display: block;
 		padding: 5px 0px;
 		font-size: 14px;
@@ -221,32 +222,32 @@ body {
 		text-decoration: none;
 	}
 
-	.card	a:hover{
+	.mycard	a:hover{
 			background-color: #FAFAFA;
 			color: inherit;
 			cursor: pointer; /* ⬅ For Codepen demo - Not important! */
 		}
 
-.card ul{
+.mycard ul{
 	margin-top: 10px;
 	padding: 15px 0px;
 	background-color: #FAFAFA;
 }
 
-.card	ul a{
+.mycard	ul a{
 		display: inline;
 		margin-right: 10px;
 	}
 
-	.card	ul a:last-of-type{
+	.mycard	ul a:last-of-type{
 			margin-right: 0px;
 		}
 
-	.card	ul a i{
+	.mycard	ul a i{
 			color: inherit;
 		}
 
-		.card	ul a i:hover{
+		.mycard	ul a i:hover{
 				transform: scale(1.5);
 				color: inherit;
 			}
@@ -262,6 +263,14 @@ body {
 
 
 @media screen and (max-width: 600px) {
+	.contactbox{
+		overflow-y: scroll;
+	}
+
+	.mycard{
+		display: table-cell;
+	}
+
 	.countdown.play{
 		height: 6vh;
 	}
