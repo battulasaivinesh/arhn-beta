@@ -1,39 +1,298 @@
 
 	
 @font-face {
-    font-family: 'Avenir';
-    src: url(../fonts/AvenirLTStd-Book.otf);
+	font-family: 'Avenir';
+	src: url(../fonts/AvenirLTStd-Book.otf);
 }
 
 a.white-mode, a.white-mode:link, a.white-mode:visited, a.white-mode:active {
-  font-family: "Montserrat";
-  font-size: 12px;
-  text-decoration: none;
-  background: #212121;
-  padding: 4px 8px;
-  color: #f7f7f7;
+font-family: "Montserrat";
+font-size: 12px;
+text-decoration: none;
+background: #212121;
+padding: 4px 8px;
+color: #f7f7f7;
 }
 a.white-mode:hover, a.white-mode:link:hover, a.white-mode:visited:hover, a.white-mode:active:hover {
-  background: #edf3f8;
-  color: #212121;
+background: #edf3f8;
+color: #212121;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-	overflow-y: hidden;
-  width: 100%;
-  height: 100%;
-	background: #000000;
-	font-family: 'Avenir';
+margin: 0;
+padding: 0;
+overflow: hidden;
+width: 100%;
+height: 100%;
+background: #000000;
+font-family: 'Avenir';
 }
 
 .canvas{
-	width: 100vw;
-	height: 100vh;
+width: 100vw;
+height: 100vh;
 }
 
 
+.contactus{
+margin-top: 2vh;
+z-index: 55;
+position: absolute;
+color:white;
+font-family: Avenir;
+height: 9vh;
+width: 8vw;
+font-size: 1.2em;
+transform: translate(38vw);
+opacity: 0.75;
+}
+
+.sponser{
+margin-top: 2vh;
+z-index: 55;
+position: absolute;
+color:white;
+font-family: Avenir;
+height: 9vh;
+width: 8vw;
+font-size: 1.2em;
+transform: translate(54vw);
+opacity: 0.75;
+}
+
+.sponsers{
+margin-top: 2vh;
+}
+
+
+
+.contactus button{
+font-size: 2em;
+border-radius: 50%;
+border:black;
+width: 3vw;
+}
+
+.sponser button{
+font-size: 2em;
+border-radius: 50%;
+border:black;
+}
+
+.back{
+transform: translateX(97vw);
+width: 3vw;
+}
+
+.back button{
+color:white;
+background-color: transparent;
+border:none;
+font-size: 1.5em;
+}
+
+
+.arhn{
+margin-top: 2vh;
+z-index: 55;
+position: absolute;
+color:white;
+font-family: Avenir;
+height: 9vh;
+width: 8vw;
+font-size: 1.4em;
+transform: translateX(46vw);
+opacity: 0.75;
+}
+
+.arhn button{
+color:white;
+background-color: transparent;
+border:black;
+font-size: 2.2em;
+border-radius: 50%;
+overflow: hidden;
+}
+
+.arhn img{
+height: 10vh;
+width:10vh;
+}
+
+.sponsers{
+position: absolute;
+display: none;
+border-radius: 10px;
+}
+
+.sponsers img{
+padding-top:10vh;
+height: auto;
+width: 70vw;
+margin-left: 15vw;
+border: 10px solid transparent;
+border-radius: 5px;
+}
+
+.contact{
+display: none;
+z-index: 10;
+position: absolute;
+text-align: center;
+width: 100vw;
+height: 100vh;
+background-color: rgba(201, 76, 76, 0);
+}
+
+.mycard{
+display: inline-block;
+margin: 10px;
+height: auto;
+background-color: #f1f1f1;
+overflow: hidden;
+background-color: #FFFFFF;
+border-radius: 10px;
+box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+text-align: center;
+width: 250px;
+-webkit-transition: .1s ease-in-out;
+transition: .1s ease-in-out;
+}
+
+.mycard:hover{
+	margin-top: -25px;
+	box-shadow: 0 15px 20px rgba(0,0,0,0.1);
+}
+
+.card_Banner{
+height: 100px;
+width: inherit;
+padding-top: 35px;
+background-color: #FAFAFA;
+background-size: cover;
+background-position: center;
+}
+
+.mycard:nth-child(1) .card_Banner{
+	/* ⬇ Photo by Alexandru Acea on Unsplash */
+	background-image: url("https://.unsplash.com/photo-1537192830907-c60714675834?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f9f8ea79c488a95e95d35c10fad79b0d&auto=format&fit=crop&w=934&q=80");
+}
+
+.card_Avatar{
+height: 100px;
+width: 100px;
+margin: auto auto;
+background-size: cover;
+background-position: center;
+background-color: #F1F1F1;
+border: 3px solid #FFFFFF;
+border-radius: 100%;
+box-shadow: 0 2px 2px rgba(0,0,0,0.1);
+}
+
+.mycard .one .card_Avatar{
+	background-image: url("https://www.ccanitd.in/images/Shivam.jpg");
+}
+.mycard .two .card_Avatar{
+	background-image: url("https://www.ccanitd.in/images/Mayank.jpg");
+}
+.mycard .three .card_Avatar{
+	background-image: url("https://www.ccanitd.in/images/Akhil.jpg");
+}
+
+.mycard h3, a, i{
+font-family: 'Avenir', sans-serif;
+font-weight: lighter;
+-webkit-transition: .1s ease-in-out;
+transition: .1s ease-in-out;
+}
+
+.mycard h3{
+	margin-top: 45px;
+	margin-bottom: 5px;
+	font-size: 18px;
+	color: #212121;
+}
+
+.mycard a{
+	display: block;
+	padding: 5px 0px;
+	font-size: 14px;
+	color: #9E9E9E;
+	text-decoration: none;
+}
+
+.mycard	a:hover{
+		background-color: #FAFAFA;
+		color: inherit;
+		cursor: pointer; /* ⬅ For Codepen demo - Not important! */
+	}
+
+.mycard ul{
+margin-top: 10px;
+padding: 15px 0px;
+background-color: #FAFAFA;
+}
+
+.mycard	ul a{
+	display: inline;
+	margin-right: 10px;
+}
+
+.mycard	ul a:last-of-type{
+		margin-right: 0px;
+	}
+
+.mycard	ul a i{
+		color: inherit;
+	}
+
+	.mycard	ul a i:hover{
+			transform: scale(1.5);
+			color: inherit;
+		}
+
+*::selection{
+background-color: #CCFF90;
+}
+
+.contact .back{
+transform:translateX(90vw);
+width: 10vw;
+}
+
+@media screen and (max-width: 600px) {
+.contactbox {
+	overflow-x: scroll;
+	white-space: nowrap;
+}
+
+.mycard{
+	width: 222px;
+	height: 256px;;
+}
+
+.countdown.play{
+	height: 6vh;
+}
+.arhn{
+	margin-top: 2vh;
+	z-index: 55;
+	position: absolute;
+	color:white;
+	font-family: Avenir;
+	height: 9vh;
+	width: 20vw;
+	font-size: 1.4em;
+	transform: translateX(40vw);
+}
+.home{
+	overflow: hidden;
+}
+.back{
+	transform: translateX(90vw);
+	width: 10vw;
+}
 .contactus{
 	margin-top: 2vh;
 	z-index: 55;
@@ -41,10 +300,19 @@ body {
 	color:white;
 	font-family: Avenir;
 	height: 9vh;
-	width: 8vw;
+	width: 15vw;
 	font-size: 1.2em;
-	transform: translate(38vw);
-	opacity: 0.75;
+	transform: translate(21vw);
+}	
+.contactus button{
+	font-size: 1.8em;
+	border-radius: 50%;
+	border:none;
+	width: 15vw;
+}
+
+.sponser button{
+	font-size: 1.8em;
 }
 
 .sponser{
@@ -54,322 +322,54 @@ body {
 	color:white;
 	font-family: Avenir;
 	height: 9vh;
-	width: 8vw;
+	width: 16vw;
 	font-size: 1.2em;
-	transform: translate(54vw);
-	opacity: 0.75;
+	transform: translate(67vw);
 }
-
-.sponsers{
-	margin-top: 2vh;
-}
-
-
-
-.contactus button{
-	font-size: 2em;
-	border-radius: 50%;
-	border:black;
-	width: 3vw;
-}
-
-.sponser button{
-	font-size: 2em;
-	border-radius: 50%;
-	border:black;
-}
-
-.back{
-	transform: translateX(97vw);
-	width: 3vw;
-}
-
-.back button{
-	color:white;
-	background-color: transparent;
-	border:none;
-	font-size: 1.5em;
-}
-
-
-.arhn{
-	margin-top: 2vh;
-	z-index: 55;
-	position: absolute;
-	color:white;
-	font-family: Avenir;
-	height: 9vh;
-	width: 8vw;
-	font-size: 1.4em;
-	transform: translateX(46vw);
-	opacity: 0.75;
-}
-
-.arhn button{
-	color:white;
-	background-color: transparent;
-	border:black;
-	font-size: 2.2em;
-	border-radius: 50%;
-	overflow: hidden;
-}
-
-.arhn img{
-	height: 10vh;
-	width:10vh;
-}
-
-.sponsers{
-	position: absolute;
-  display: none;
-	border-radius: 10px;
-}
-
 .sponsers img{
-	padding-top:10vh;
-  height: auto;
-	width: 70vw;
-	margin-left: 15vw;
-	border: 10px solid transparent;
-	border-radius: 5px;
+	width: 100vw;
+	 margin-left: 0; 
 }
 
-.contact{
-  display: none;
-  z-index: 10;
-  position: absolute;
-  text-align: center;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(201, 76, 76, 0);
-}
 
-.mycard{
-	display: inline-block;
-	margin: 10px;
-  height: auto;
-  background-color: #f1f1f1;
-	overflow: hidden;
-	background-color: #FFFFFF;
-	border-radius: 10px;
-	box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-	text-align: center;
-	width: 250px;
-	-webkit-transition: .1s ease-in-out;
-	transition: .1s ease-in-out;
-}
-
-	.mycard:hover{
-		margin-top: -25px;
-		box-shadow: 0 15px 20px rgba(0,0,0,0.1);
-	}
-
-.card_Banner{
-	height: 100px;
-	width: inherit;
-	padding-top: 35px;
-	background-color: #FAFAFA;
-	background-size: cover;
-	background-position: center;
-}
-
-	.mycard:nth-child(1) .card_Banner{
-		/* ⬇ Photo by Alexandru Acea on Unsplash */
-		background-image: url("https://.unsplash.com/photo-1537192830907-c60714675834?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f9f8ea79c488a95e95d35c10fad79b0d&auto=format&fit=crop&w=934&q=80");
-	}
-
-.card_Avatar{
-	height: 100px;
-	width: 100px;
-	margin: auto auto;
-	background-size: cover;
-	background-position: center;
-	background-color: #F1F1F1;
-	border: 3px solid #FFFFFF;
-	border-radius: 100%;
-	box-shadow: 0 2px 2px rgba(0,0,0,0.1);
-}
-
-	.mycard .one .card_Avatar{
-    background-image: url("https://www.ccanitd.in/images/Shivam.jpg");
-  }
-  .mycard .two .card_Avatar{
-    background-image: url("https://www.ccanitd.in/images/Mayank.jpg");
-  }
-  .mycard .three .card_Avatar{
-    background-image: url("https://www.ccanitd.in/images/Akhil.jpg");
-  }
-
-.mycard h3, a, i{
-	font-family: 'Avenir', sans-serif;
-	font-weight: lighter;
-	-webkit-transition: .1s ease-in-out;
-	transition: .1s ease-in-out;
-}
-
-	.mycard h3{
-		margin-top: 45px;
-		margin-bottom: 5px;
-		font-size: 18px;
-		color: #212121;
-	}
-
-	.mycard a{
-		display: block;
-		padding: 5px 0px;
-		font-size: 14px;
-		color: #9E9E9E;
-		text-decoration: none;
-	}
-
-	.mycard	a:hover{
-			background-color: #FAFAFA;
-			color: inherit;
-			cursor: pointer; /* ⬅ For Codepen demo - Not important! */
-		}
-
-.mycard ul{
-	margin-top: 10px;
-	padding: 15px 0px;
-	background-color: #FAFAFA;
-}
-
-.mycard	ul a{
-		display: inline;
-		margin-right: 10px;
-	}
-
-	.mycard	ul a:last-of-type{
-			margin-right: 0px;
-		}
-
-	.mycard	ul a i{
-			color: inherit;
-		}
-
-		.mycard	ul a i:hover{
-				transform: scale(1.5);
-				color: inherit;
-			}
-
-*::selection{
-	background-color: #CCFF90;
-}
-
-.contact .back{
-	transform:translateX(90vw);
-	width: 10vw;
-}
-
-@media screen and (max-width: 600px) {
-	.contactbox {
-		overflow-x: scroll;
-		white-space: nowrap;
-	}
-
-	.mycard{
-		width: 222px;
-		height: 256px;;
-	}
-
-	.countdown.play{
-		height: 6vh;
-	}
-	.arhn{
-		margin-top: 2vh;
-		z-index: 55;
-		position: absolute;
-		color:white;
-		font-family: Avenir;
-		height: 9vh;
-		width: 20vw;
-		font-size: 1.4em;
-		transform: translateX(40vw);
-	}
-	.home{
-		overflow: hidden;
-	}
-	.back{
-		transform: translateX(90vw);
-		width: 10vw;
-	}
-	.contactus{
-		margin-top: 2vh;
-		z-index: 55;
-		position: absolute;
-		color:white;
-		font-family: Avenir;
-		height: 9vh;
-		width: 15vw;
-		font-size: 1.2em;
-		transform: translate(21vw);
-	}	
-	.contactus button{
-		font-size: 1.8em;
-		border-radius: 50%;
-		border:none;
-		width: 15vw;
-	}
-
-	.sponser button{
-		font-size: 1.8em;
-	}
-
-	.sponser{
-		margin-top: 2vh;
-		z-index: 55;
-		position: absolute;
-		color:white;
-		font-family: Avenir;
-		height: 9vh;
-		width: 16vw;
-		font-size: 1.2em;
-		transform: translate(67vw);
-	}
-	.sponsers img{
-		width: 100vw;
-		 margin-left: 0; 
-	}
-	
-	
 }
 
 
 .title {
-  z-index: 10;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  font-family: 'Avenir';
-  text-align: center;
-  width: 100%;
+z-index: 10;
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translateX(-50%) translateY(-50%);
+font-family: 'Avenir';
+text-align: center;
+width: 100%;
 }
 .title h1 {
-  position: relative;
-  color: #EEEEEE;
-  font-weight: 600;
-  font-size: 60px;
-  padding: 0;
-  margin: 0;
-  line-height: 1;
-  text-shadow: 0 0 30px #000155;
+position: relative;
+color: #EEEEEE;
+font-weight: 600;
+font-size: 60px;
+padding: 0;
+margin: 0;
+line-height: 1;
+text-shadow: 0 0 30px #000155;
 }
 .title h1 span {
-  font-weight: 600;
-  padding: 0;
-  margin: 0;
-  color: #BBB;
+font-weight: 600;
+padding: 0;
+margin: 0;
+color: #BBB;
 }
 .title h3 {
-  font-weight: 200;
-  font-size: 20px;
-  padding: 0;
-  margin: 0;
-  line-height: 1;
-  color: #EEEEEE;
-  letter-spacing: 2px;
-  text-shadow: 0 0 30px #000155;
+font-weight: 200;
+font-size: 20px;
+padding: 0;
+margin: 0;
+line-height: 1;
+color: #EEEEEE;
+letter-spacing: 2px;
+text-shadow: 0 0 30px #000155;
 }
 
 
@@ -378,91 +378,91 @@ body {
 /* loader */
 
 .pageload-overlay {
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	display: none;
-	background-color: #121536;
-	z-index: 155;
+position: fixed;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+display: none;
+background-color: #121536;
+z-index: 155;
 }
 
 .pageload-overlay.show {
-	display: block;
+display: block;
 }
 
 .pageload-overlay svg {
-	position: absolute;
-	top: 0;
-	left: 0;
+position: absolute;
+top: 0;
+left: 0;
 }
 
 .pageload-overlay svg path {
-	fill: #fff;
+fill: #fff;
 }
 .pagewrap {
-	visibility: hidden;
+visibility: hidden;
 }
 
 .papewrap show{
-  visibility: visible;
+visibility: visible;
 }
 
 
 .pageload-overlay::after,
 .pageload-overlay::before {
-	content: '';
-	position: fixed;
-	width: 20px;
-	height: 20px;
-	top: 50%;
-	left: 50%;
-	margin: -10px 0 0 -10px;
-	border-radius: 50%;
-	visibility: hidden;
-	opacity: 0;
-	z-index: 1000;
-	-webkit-transition: opacity 0.15s, visibility 0s 0.15s;
-	transition: opacity 0.15s, visibility 0s 0.15s;
+content: '';
+position: fixed;
+width: 20px;
+height: 20px;
+top: 50%;
+left: 50%;
+margin: -10px 0 0 -10px;
+border-radius: 50%;
+visibility: hidden;
+opacity: 0;
+z-index: 1000;
+-webkit-transition: opacity 0.15s, visibility 0s 0.15s;
+transition: opacity 0.15s, visibility 0s 0.15s;
 }
 
 .pageload-overlay::after {
-	background-color: #4cfff9;
-	-webkit-transform: translateX(-20px);
-	transform: translateX(-20px);
-	-webkit-animation: moveRight 0.6s linear infinite alternate;
-	animation: moveRight 0.6s linear infinite alternate;
+background-color: #4cfff9;
+-webkit-transform: translateX(-20px);
+transform: translateX(-20px);
+-webkit-animation: moveRight 0.6s linear infinite alternate;
+animation: moveRight 0.6s linear infinite alternate;
 }
 
 .pageload-overlay::before {
-	background-color: #694FB9;
-	-webkit-transform: translateX(20px);
-	transform: translateX(20px);
-	-webkit-animation: moveLeft 0.6s linear infinite alternate;
-	animation: moveLeft 0.6s linear infinite alternate;
+background-color: #694FB9;
+-webkit-transform: translateX(20px);
+transform: translateX(20px);
+-webkit-animation: moveLeft 0.6s linear infinite alternate;
+animation: moveLeft 0.6s linear infinite alternate;
 }
 
 @-webkit-keyframes moveRight {
-	to { -webkit-transform: translateX(20px); }
+to { -webkit-transform: translateX(20px); }
 }
 
 @keyframes moveRight {
-	to { transform: translateX(20px); }
+to { transform: translateX(20px); }
 }
 
 @-webkit-keyframes moveLeft {
-	to { -webkit-transform: translateX(-20px); }
+to { -webkit-transform: translateX(-20px); }
 }
 
 @keyframes moveLeft {
-	to { transform: translateX(-20px); }
+to { transform: translateX(-20px); }
 }
 
 .pageload-loading.pageload-overlay::after,
 .pageload-loading.pageload-overlay::before {
-	opacity: 1;
-	visibility: visible;
-	-webkit-transition: opacity 0.3s;
-	transition: opacity 0.3s;
+opacity: 1;
+visibility: visible;
+-webkit-transition: opacity 0.3s;
+transition: opacity 0.3s;
 }
