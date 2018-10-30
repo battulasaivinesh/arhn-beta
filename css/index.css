@@ -134,7 +134,7 @@ border-radius: 5px;
 .contact{
 display: none;
 z-index: 10;
-position: absolute;
+position: fixed;
 text-align: center;
 overflow: hidden;
 width: 100vw;
