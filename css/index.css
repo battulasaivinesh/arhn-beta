@@ -267,6 +267,11 @@ body {
 		white-space: nowrap;
 	}
 
+	.mycard{
+		width: 222px;
+		height: 256px;;
+	}
+
 	.countdown.play{
 		height: 6vh;
 	}
